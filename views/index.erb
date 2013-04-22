@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Test</title>
+</head>
+<body>
+<table border>
+<tr>
+<th>学籍番号</th>
+<th>氏名</th>
+<th>E-mail</th>
+</tr>
+
+<% @students.each do |stu| %>
+<tr>
+<td><%= stu.id %></td>
+<td><%= stu.name %></td>
+<td><%= stu.email %></td>
+</tr>
+<% end %>
+
+</table>
+</body>
+</html>
